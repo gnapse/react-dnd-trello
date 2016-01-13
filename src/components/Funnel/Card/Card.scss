@@ -1,0 +1,35 @@
+.card {
+  list-style-type: none;
+  padding: 5px 10px;
+  margin: 0;
+  &:first-child {
+    padding-top: 0;
+  }
+  &.dragging {
+    .inner {
+      > * {
+        visibility: hidden;
+      }
+      background-color: #A7ACB7;
+    }
+  }
+}
+
+.inner {
+  cursor: pointer;
+  display: block;
+  color: #656674;
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 5px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  height: 53px;
+  &:active {
+    cursor: -webkit-grabbing;
+    cursor: -moz-grabbing;
+  }
+  &:hover {
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+    text-decoration: none;
+  }
+}

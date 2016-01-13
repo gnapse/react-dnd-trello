@@ -1,0 +1,11 @@
+.board {
+  display: flex;
+}
+
+.lists {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 20px;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
