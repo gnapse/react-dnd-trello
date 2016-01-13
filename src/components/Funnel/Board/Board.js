@@ -4,9 +4,10 @@ import withStyles from '../../../decorators/withStyles';
 import List from '../List';
 import { DragDropContext } from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
+import TouchBackend from 'react-dnd-touch-backend';
 import update from 'react/lib/update';
 
-@DragDropContext(HTML5Backend)
+@DragDropContext(TouchBackend({ enableMouseEvents: true }))
 @withStyles(s)
 class Board extends Component {
 
