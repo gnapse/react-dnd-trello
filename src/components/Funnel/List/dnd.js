@@ -39,7 +39,7 @@ const hover = {
         target.index = Math.max(props.list.items.length-1, 0);
       }
 
-      if (item.list !== target.list || item.index !== target.index) {
+      if (item.list !== target.list) {
         props.moveCard(item, target);
       }
     }
@@ -57,7 +57,7 @@ const hover = {
 const dropTarget = {
   collect(connect) {
     return {
-      connectDropTarget: connect.dropTarget(),
+      connectDropTarget: connect.dropTarget()
     };
   },
 
